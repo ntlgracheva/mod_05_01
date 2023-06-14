@@ -22,6 +22,16 @@ itemsThreeList.replaceWith(itemsFiveList);
 const itemFiveContent = document.querySelector('.item_five .content');
 itemFiveContent.append(itemsThreeList);
 
+//правка шестого раздела
+const itemsTwo = document.querySelectorAll('.item_six .props__item_two');
+const itemsTwoList = document.querySelector('.item_two .props__list');
+itemsTwoList.append(itemsTwo[0]);
+itemsTwoList.append(itemsTwo[1]);
+
 //перестановка 
 itemsList[0].remove();
 itemsList[3].after(itemsList[0]);
+
+//удаление рекламы
+const adds = document.querySelector(".ads");
+adds.remove();
